@@ -1,0 +1,38 @@
+<div class="background-image">
+    <nav class="navbar navbar-expand-sm bg-secondary  navbar-dark" style="height: 50px; font-size: 30px;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a routerLink="/employee-list" routerLinkActive="activebutton"
+                    style="color: #fff; text-decoration: none; padding: 30px;" class="button">Employee List</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/create-employee" routerLinkActive="activebutton"
+                    style="color: #fff; text-decoration: none; padding: 30px;" class="button">Add Employee</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="col-md-6 offset-md-3  border">
+        <h3>Update Employee</h3>
+        <form (ngSubmit)="onSubmit()">
+            <br>
+            <div class="form-group">
+                <label> First Name</label>
+                <input type="text" class="form-control" id="firstName" style="color:black;" [(ngModel)]="employee.firstName"
+                    name="firstName">
+            </div>
+            <br>
+            <div class="form-group">
+                <label> Last Name</label>
+                <input type="text" class="form-control" id="lastName" style="color:black;" [(ngModel)]="employee.lastName" name="lastName">
+            </div>
+            <br>
+            <div class="form-group">
+                <label> Email Id</label>
+                <input type="text" class="form-control" id="emailId" style="color:black;" [(ngModel)]="employee.emailId" name="emailId">
+            </div>
+            <br>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+
+</div>

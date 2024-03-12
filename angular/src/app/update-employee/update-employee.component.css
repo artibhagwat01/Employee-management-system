@@ -1,0 +1,16 @@
+.background-image {
+    
+    background-image: url('https://th.bing.com/th/id/OIP.yVSlzknfRGca0wqs5nqagQHaEo?pid=ImgDet&w=474&h=296&rs=1'); /* Change 'path/to/your/image.jpg' to the actual path of your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height as per your requirement */
+}
+.border{
+    border: 5px solid white;
+    margin-top: 100px;
+    padding: 25px;
+}
+*{
+    color: white;
+}
